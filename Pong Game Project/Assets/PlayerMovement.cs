@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         {
             playerMove = new Vector2(0, 1);
         }
-        else if(ball.transform.position.y < transform.position.y + 0.5)
+        else if(ball.transform.position.y < transform.position.y - 0.5)
         {
             playerMove = new Vector2 (0, -1);
         }
