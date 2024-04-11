@@ -1339,6 +1339,7 @@ GameObject:
   - component: {fileID: 1981176657}
   - component: {fileID: 1981176656}
   - component: {fileID: 1981176655}
+  - component: {fileID: 1981176659}
   m_Layer: 0
   m_Name: Basic Ball
   m_TagString: Untagged
@@ -1382,7 +1383,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1981176654}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e52ed581fadc1f34dbb81ab3156fc41a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1469,12 +1470,28 @@ Transform:
   m_GameObject: {fileID: 1981176654}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1981176659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981176654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5674da34dbadbc4d9125264b4aa6aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialSpeed: 10
+  speedIncrease: 0.25
+  playerScore: {fileID: 2119832877}
+  AIScore: {fileID: 879073002}
 --- !u!1 &2119832875
 GameObject:
   m_ObjectHideFlags: 0
